@@ -1,0 +1,11 @@
+{
+	"AWSEBDockerrunVersion": "1",
+	"Image": {
+		"Name": "markhobson/aws-eb-demo"
+	},
+	"Ports": [
+		{
+			"ContainerPort": "8080"
+		}
+	]
+}
