@@ -1,6 +1,6 @@
 # AWS Elastic Beanstalk Demo
 
-Deploying a Dockerized Spring Boot application to AWS Elastic Beanstalk.
+Deploying a [Dockerized](https://www.docker.com/) [Spring Boot](https://projects.spring.io/spring-boot/) application to [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/).
 
 ## Getting started
 
