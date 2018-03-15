@@ -1,6 +1,6 @@
 # AWS Elastic Beanstalk Demo
 
-Deploying a [Dockerized](https://www.docker.com/) [Spring Boot](https://projects.spring.io/spring-boot/) application to [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/).
+Deploying a [Dockerized](https://www.docker.com/) [Spring Boot](https://projects.spring.io/spring-boot/) application to [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) with CI.
 
 ## Getting started
 
@@ -45,7 +45,7 @@ We'll use [CircleCI](https://circleci.com) for continuous integration.
 	* `AWS_SECRET_ACCESS_KEY`
 	* `AWS_DEFAULT_REGION`
 
-The CI job builds the project within the Docker container [.circleci/images/primary/Dockerfile](.circleci/images/primary/Dockerfile). To rebuild this:
+The CI job builds the project within the Docker container [.circleci/images/primary/Dockerfile](.circleci/images/primary/Dockerfile). If you need to rebuild this:
 
 	docker build -t markhobson/aws-eb-demo-primary .circleci/images/primary
 	docker login
@@ -56,3 +56,5 @@ The CI job builds the project within the Docker container [.circleci/images/prim
 To terminate the environment in AWS:
 
 	eb terminate
+
+You will no longer be charged for these resources.
