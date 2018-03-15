@@ -55,6 +55,6 @@ The CI job builds the project within the Docker container [.circleci/images/prim
 
 To terminate the environment in AWS:
 
-	eb terminate
+	eb terminate --force aws-eb-demo-dev
 
 You will no longer be charged for these resources.
