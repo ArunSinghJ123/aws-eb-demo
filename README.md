@@ -4,16 +4,11 @@ Deploying a [Dockerized](https://www.docker.com/) [Spring Boot](https://projects
 
 ## Getting started
 
-1. Install the [AWS Elastic Beanstalk CLI](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html)
+1. [Install the AWS Elastic Beanstalk CLI](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html)
 
-1. [Configure the AWS Elastic Beanstalk CLI](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-configuration.html) as follows:
+1. Configure the AWS Elastic Beanstalk CLI:
 
-	* *Select a default region:* Any
-	* *Select an application to use:* aws-eb-demo
-	* *It appears you are using Docker. Is this correct?* Y
-	* *Select a platform version:* Docker 17.09.1-ce
-	* *Do you wish to continue with CodeCommit?* N
-	* *Do you want to set up SSH for your instances?* N
+		eb init --platform docker-17.09.1-ce --region eu-west-2 aws-eb-demo
 
 1. Create the environment in AWS, selecting the defaults when prompted:
 

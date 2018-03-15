@@ -20,5 +20,8 @@ jobs:
           name: Push Docker image to registry
           command: docker push markhobson/aws-eb-demo
       - run:
-          name: Deploy Docker image to AWS
+          name: Configure AWS Elastic Beanstalk
+          command: eb init --platform docker-17.09.1-ce --region ${AWS_DEFAULT_REGION} aws-eb-demo
+      - run:
+          name: Deploy Docker image to AWS Elastic Beanstalk
           command: eb deploy
