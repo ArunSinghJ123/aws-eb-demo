@@ -1,9 +1,9 @@
 FROM docker
 
-# Java, Maven & pip
+# Git, Java, Maven & pip
 
 RUN apk update \
-	&& apk add openjdk8 maven py-pip \
+	&& apk add git openjdk8 maven py-pip \
 	&& rm -rf /var/cache/apk/*
 
 # AWS EB CLI
