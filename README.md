@@ -28,9 +28,9 @@ To manually deploy the project to AWS:
 	docker push markhobson/aws-eb-demo
 	eb deploy
 
-## Continuous Integration (CI)
+## Continuous deployment
 
-We'll use [CircleCI](https://circleci.com) for continuous integration.
+We'll use [CircleCI](https://circleci.com) for continuous deployment.
 
 1. Add the project
 
@@ -45,7 +45,7 @@ We'll use [CircleCI](https://circleci.com) for continuous integration.
 	* `AWS_SECRET_ACCESS_KEY`
 	* `AWS_DEFAULT_REGION`
 
-The CI job builds the project within the Docker container [.circleci/images/primary/Dockerfile](.circleci/images/primary/Dockerfile). If you need to rebuild this:
+The job builds the project within the Docker container [.circleci/images/primary/Dockerfile](.circleci/images/primary/Dockerfile). If you need to rebuild this:
 
 	docker build -t markhobson/aws-eb-demo-primary .circleci/images/primary
 	docker login
